@@ -8,7 +8,7 @@ public static sealed class singleTone{
     }
     public static singleTone getInstanceLazy(){
         if (instance == NULL) this.instance = new singleTone();
-        get{return this.instance;}
+        return this.instance;
     }
     public static singleTone getInstanceThreadSafe(){
      lock (lockThis)
