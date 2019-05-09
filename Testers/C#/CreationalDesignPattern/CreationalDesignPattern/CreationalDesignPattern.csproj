@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AbstractFactory\CreaditCardFactory.cs" />
+    <Compile Remove="AbstractFactory\Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CreditCard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreditCard.cs" />
+  </ItemGroup>
+</Project>
