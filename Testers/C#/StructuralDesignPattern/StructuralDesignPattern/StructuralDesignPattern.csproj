@@ -32,18 +32,23 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Adaptor\IAdaptor.cs" />
-    <Compile Include="Adaptor\Adaptor.cs" />
-    <Compile Include="Adaptor\IObject.cs" />
-    <Compile Include="Adaptor\ObjectA.cs" />
-    <Compile Include="Adaptor\ObjectB.cs" />
-    <Compile Include="Adaptor\Object.cs" />
-    <Compile Include="Adaptor\tester.cs" />
+    <Compile Include="Adaptor\ExampleA\Adaptor.cs" />
+    <Compile Include="Adaptor\ExampleA\IAdaptor.cs" />
+    <Compile Include="Adaptor\ExampleA\Runner.cs" />
+    <Compile Include="Bridge\Runner.cs" />
+    <Compile Include="Bridge\IColour.cs" />
+    <Compile Include="Bridge\RedColour.cs" />
+    <Compile Include="Bridge\GreenColour.cs" />
+    <Compile Include="Bridge\IShape.cs" />
+    <Compile Include="Bridge\CircleShape.cs" />
+    <Compile Include="Bridge\BaseColour.cs" />
+    <Compile Include="Bridge\BaseShape.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Adaptor\" />
+    <Folder Include="Adaptor\ExampleA\" />
+    <Folder Include="Bridge\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
